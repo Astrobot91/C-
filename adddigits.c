@@ -5,15 +5,17 @@
 
 int main(void)
 {
-    float n, count = 0, sum = 0; 
+    int n, count = 0, sum = 0; 
     int i = 1, p;
 
     printf("Enter the number: ");
-    scanf("%f", &n);
+    scanf("%d", &n);
 
-    while (10 < n)
+    while (n>0)
     {
-        n = n / 10;
-        count++;
+        sum+=n%10;
+	n=n/10;
     }
+
+    printf("%d\n", sum);
 }
