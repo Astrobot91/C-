@@ -1,17 +1,23 @@
+/*Program to calculate ADD,SUB,MUL,DIV using switch case*/
+
 #include <stdio.h>
 
-int main()
+/*Main function starts here*/
+
+int main(void)
 {
     typedef float decimal;
-    typedef char operation;      /*Rename the identifiers(int, float, etc)*/
+    typedef char operation;      /*Rename the identifiers (int, float, etc)*/
     decimal x,y;
     operation op;
+
     printf("Enter operation: ");
     scanf("%c",&op);
+
     printf("Enter X and Y: ");
     scanf("%f %f",&x,&y);
 
-    switch (op)
+    switch (op)     /*Switching the operator here*/
     {
     case '+':
         printf("Addtion of X & Y: %.2f\n",x+y);
@@ -34,3 +40,5 @@ int main()
         break;
     }    
 }
+
+/*End of program*/
