@@ -21,7 +21,7 @@ void interestrate(void) /*Function to Calcuate interestrate*/
 	printf("Please enter your initial Investment: ");
 	scanf("%f", &inv);
 
-	printf("Enter Period in years: ");
+	printf("Enter Period in years/months: ");
 	scanf("%i", &t);
 
 	printf("Enter the Interest Rate: ");
@@ -39,6 +39,6 @@ void interestrate(void) /*Function to Calcuate interestrate*/
 	{
 		val = inv + inv * (inr / 100);
 		inv = val;
-		printf("year %i		%.2f\n", j + 1, val);
+		printf("year/month %i		%.2f\n", j + 1, val);
 	}
 }
